@@ -19,6 +19,9 @@ import LearningRadioButtonsRN from "./learning-radion-buttons";
 import LearningDateRN from "./Learning-date";
 import LearningAsyncStorage from "./learning-storage";
 import InfoScreen from "./info";
+import LearningDropDown from './dropdown';
+import CustomDropDown from './customDropDown';
+import TimeTestingScreen from './time'
 
 // Note: For Bottom Tabs Navigation...!
 // const Tab = createBottomTabNavigator();
@@ -41,6 +44,9 @@ const Navigation = () => {
                 <Screen name="DateRN" component={LearningDateRN} />
                 <Screen name="LearningAsyncStorage" component={LearningAsyncStorage} />
                 <Screen name="InfoScreen" component={InfoScreen} />
+                <Screen name="dropdown" component={LearningDropDown} />
+                <Screen name="customdropdown" component={CustomDropDown} />
+                <Screen name="time" component={TimeTestingScreen} />
             </Navigator>
         </NavigationContainer>
     );
